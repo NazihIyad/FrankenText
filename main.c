@@ -3,7 +3,6 @@
 #include <string.h>
 #include <ctype.h>
 #include <time.h>
-#include <unistd.h>
 
 #define MAX_TOKENS 1000
 
@@ -59,8 +58,6 @@ int main() {
 
     replace_non_printable_chars_with_space();
     tokenize_and_fill();
-
-    sleep(1); 
 
     int start;
     do {
